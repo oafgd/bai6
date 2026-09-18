@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .content{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap:20px;
+        }
+        .item{
+            padding:20px;
+            border: 1px solid black;
+            margin :10px;
+            border-radius: 5px;
+        }
+        @media (max-width:760px){
+            .content{
+                grid-template-columns: 1fr;
+            }
+        }
+        .header{
+            background-color: rgb(92, 174, 10);
+            color:white;
+            text-align: center;
+            padding:20px;
+        }
+        .footer{
+            color: white;
+            background-color: black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Demo Responsive với CSS Grid</h1>
+    </div>
+    <div class="content">
+      <div class="item">
+        <h2>phần 1</h2>
+        <p>Đây là phần nội dung đầu tiên trong lưới. Khi màn hình nhỏ, các phần tử sẽ xếp chồng lên nhau.</p>
+      </div>
+      <div class="item">
+        <h2>phần 2</h2>
+       <p>CSS Grid giúp dễ dàng điều chỉnh bố cục theo kích thước màn hình mà không cần thay đổi HTML.</p>
+      </div>
+      <div class="item">
+        <h2>phần 3</h2>
+         <p>Responsive design giúp website thân thiện với mọi thiết bị từ điện thoại đến máy tính để bàn.</p>
+      </div>
+      <div class="item">
+        <h2>phần 4</h2>
+         <p>Bạn có thể thêm nhiều phần tử hơn và Grid sẽ tự động điều chỉnh bố cục.</p>
+      </div><div class="item">
+        <h2>phần 5</h2>
+        <p>Thử thu nhỏ cửa sổ trình duyệt để thấy hiệu ứng thay đổi bố cục theo từng kích thước.</p>
+      </div>
+      <div class="item">
+        <h2>phần 6</h2>
+         <p>CSS Grid rất mạnh mẽ và linh hoạt cho việc xây dựng giao diện web hiện đại.</p>
+      </div> 
+    </div>
+    <div class="footer">
+        <span>&copy; 2025 Demo responsive - Web design topic. ICTU by Anh Chuyen</span>
+    </div>
+    
+</body>
+</html>
